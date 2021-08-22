@@ -187,18 +187,16 @@ footer {
   flex-flow: column wrap;
   margin: 15px 0px;
   width: 100%; }
-
-.boton input {
-  padding: 5px;
-  height: 30px;
-  color: lightsalmon;
-  background: white;
-  width: 100%; }
-
-.boton input:hover {
-  background: lightsalmon;
-  border-bottom: 2px solid lightsalmon;
-  color: white; }
+  .boton input {
+    padding: 5px;
+    height: 30px;
+    color: lightsalmon;
+    background: white;
+    width: 100%; }
+    .boton input :hover {
+      background: lightsalmon;
+      border-bottom: 2px solid lightsalmon;
+      color: white; }
 
 /*FLEX*/
 .padre-flex {

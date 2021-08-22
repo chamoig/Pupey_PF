@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+
+<head>
+    <title> Contacto </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="stylo.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,400;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="grid">
+    <header class="header">
+        <h1 class="subrayado centro animate__animated animate__backInRight">PUPEY</h1>
+        <h2 class="enCursiva centro animate__animated animate__backInLeft">bunny's gang</h2>
+    </header>
+    <nav class="nav">
+        <ul class="centro grad">
+            <li><a href="index.html"> Inicio</a></li>
+            <li><a href="Quienessomos.html"> ¿Quienes somos?</a></li>
+            <li><a href="Veterinariosdeconfianza.html"> Veterinarios de confianza</a></li>
+            <li><a href="Productos.html"> Productos</a></li>
+            <li><a href="Contacto.html"> Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main class="aside centro">
+        <h2 class="centro subrayado animate__animated animate__fadeIn"> Consultas y Newsletter</h2>   
+    </main>
+
+    <div class="principal papa-flex">
+        <div class="centro">
+        <p class="centro animate__animated animate__bounce">Suscribite para recibir info antes que nadie:</p>
+        <video src="Videos/videodepupump4.mp4" style="width:400px;height: 300px;" class="pupoRedondeado" preload="auto" autoplay controls loop muted></video>
+    </div>
+        <div class="bordeLiso centro">
+        <form action="/ruta/archivo.php" method="post"><!--acadeberiaincluir/laruta--><!--si no indico el tipo de method automaticamente es GET-->
+        <label for="nombre"> Nombre:</label>
+        <input type="text" name="nombre" placeholder="Nombre"><br><!--placeholder para que se vea el valor del atributo en las celdas-->
+        <label for="apellido"> Apellido:</label>
+        <input type="text" name="Apellido" placeholder="Apellido"><br>
+        <label for="mail">Correo:</label>
+        <input type="mail" name="mail"><br>
+        <label for="consultas">Consultas:</label>
+        <select name="Consultas"><!--Menú desplegable-->
+         <option value="Productos">Productos</option>
+          <option value="Veterinarios">Veterinarios</option>
+         <option value="Otros">Otros</option>
+        </select><br>
+        <textarea name="Consultas" cols="30" rows="10"></textarea><br><!--diseño input-->
+        
+        <input type="submit" value="Enviar formulario">
+        <input type="reset" value="Limpiar formulario"><br>
+        <label for="newsletter">Suscribir a Newsletter</label>
+        <input type="checkbox" value="Newsletter">
+        </div>
+        </form> 
+    </div>
+
+    <footer class="footer grad">
+        <p><span>© Copyright Pupey - 2021</span></p>
+        <p><span>Todos los derechos reservados</span></p>
+    </footer>
+    </div>
+
+</body>
+</html>

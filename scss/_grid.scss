@@ -1,0 +1,41 @@
+/*Grid*/
+.header {
+    background-color: rgb(255, 207, 188);
+    color: white;
+    width: 100%;
+    padding: 5px;
+    grid-area: header;
+}
+.nav {
+    grid-area: nav;
+    color: white;
+    width: 100%;
+}
+.principal {
+    grid-area: principal;
+    width: 100%;
+}
+.aside {
+    grid-area: aside;
+    width: 100%;
+}
+.footer {
+    color: white;
+    grid-area: footer;
+    width: 100%;
+}
+
+.grid {
+    height: 100%;
+    margin: 0%;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+    "header"
+    "nav"
+    "aside"
+    "principal"
+    "footer";
+}
